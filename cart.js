@@ -59,7 +59,8 @@ const summedPrice = cart.reduce(/* CALLBACK HERE */)
 */
 
 const calcFinalPrice = (cartTotal, couponValue, tax) => {
-
+    let tax = .06
+    cartTotal 
 }
 ]
 
@@ -84,15 +85,25 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 
     Your object should have at least 4 properties. 
 */
-
-/*
     
 
-*/
+    My customer object will need to provide their name, phone Number, the time they want to pick up their food, and their food order.
+    name (String)
+    phone number (number)
+    order time (number)
+    food order [array with strings]
+
+
 
 /*
     Now, create a customer object following your own
     guidelines.
 */
 
-//CODE HERE
+const customer {
+    name: 'Alaina',
+    phoneNumber: 6166107675,
+    orderTime: 0400,
+    foodOrdered: ['pizza', 'wings', 'nachos']
+}
+console.log(customer)
