@@ -12,7 +12,7 @@
     Make sure to call your constructor, and 
     require these 2 parameters: name, shifts.
 
-    Create a method on the class called 
+    Create a method on the class called             //a method is a function on a class, so i need to create another function within the first function/
     `getSchedule` that prints a string:
     [NAME] works on [SHIFTS]
     Where NAME and SHIFTS reference the values
@@ -21,10 +21,12 @@
 
 
 class Employee {
-    constructor(name, shifts)
-    const getSchedule = () => [
-        toString([NAME] works on [SHIFTS])
-    ]
+    constructor(name, shifts){
+        this.name = name;
+        this.shifts = shifts;
+    }
+     getSchedule = () => {
+        console.log(`${name} works on ${shifts}`)
 }
 }
 
@@ -39,15 +41,15 @@ class Employee {
     shifts: weekday mornings, weekday afternoons
 */
 
-//CODE HERE
+const empOne = new Employee('Jess', 'weekday mornings', 'weekday afternoons')
+console.log(empOne)
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-//CODE HERE
-
+getSchedule(empOne)
 
 /*
     Make a copy of the empOne object
@@ -61,7 +63,7 @@ class Employee {
     dot or bracket notation.
 */
 
-//CODE HERE
+.spread
 
 
 
@@ -88,7 +90,13 @@ class Employee {
     the employees array. 
 */
 
-//CODE HERE
+class Manager {
+    constructor{name, shifts}
+    super{
+    getEmployees = () =>{
+        console.log(`${name} manages ${employees}`)
+    }
+} addEmployee (emp) 
 
 
 
